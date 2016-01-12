@@ -90,7 +90,8 @@ var transitions = map[State]State{
 	WorkPending:  Work,
 }
 
-// Transition goes to the next state
+// Transition advances the given Pom to the next state.
+// This is not a method so rpc.Register in pomd won't complain about the wrong signature.
 func Transition(p *Pom) {
 	p.lock.Lock()
 	defer p.lock.Unlock()
