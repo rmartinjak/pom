@@ -3,8 +3,8 @@ Pomodoro timer
 
 # Installation
 ```
-go install github.com/rmartinjak/pom/pom
-go install github.com/rmartinjak/pom/pomd
+go get github.com/rmartinjak/pom/pom
+go get github.com/rmartinjak/pom/pomd
 ```
 
 # Usage
